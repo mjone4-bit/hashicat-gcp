@@ -1,7 +1,7 @@
 module "network" {
   source  = "app.terraform.io/mjone4-training/network/google"
   version = "2.5.0"
-    project_id   = "var.project"
+    project_id   = var.project
     network_name = "mjone4-vpc"
   subnets = [
   {
